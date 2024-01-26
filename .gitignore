@@ -1,0 +1,7 @@
+*.swp
+/*.swp
+*.out
+/*.out
+*.swo
+/*.swp
+.DS_Store
