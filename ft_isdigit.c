@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pcabanas <pcabanas@student.42madrid>       +#+  +:+       +#+        */
+/*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 11:31:11 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/09 15:28:52 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/29 11:00:56 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//isdigit - check whether a character is a digit
+//check whether a character is a digit
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
