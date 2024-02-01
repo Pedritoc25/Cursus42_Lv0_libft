@@ -5,5 +5,6 @@
 *.swo
 /*.swp
 .DS_Store
+.vscode
 *.o
 /*.o
