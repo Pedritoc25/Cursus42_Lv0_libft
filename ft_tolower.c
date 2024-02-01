@@ -6,11 +6,11 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 12:02:07 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/12 20:18:21 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 17:52:00 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//tolower - convert a char to lowercase
+//convert a char to lowercase
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
