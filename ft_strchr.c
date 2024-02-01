@@ -6,19 +6,23 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 12:10:15 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/17 09:58:27 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/01 16:28:42 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 //locate character in string
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	size_t	i;
+	size_t	len;
 
 	i = 0;
-	while (s[i] != '\0')
+	len = ft_strlen(s);
+	while (i <= len)
 	{
-		if (s[i] == c)
+		if (s[i] == (char)c)
 			return ((char *)(s + i));
 		i++;
 	}
