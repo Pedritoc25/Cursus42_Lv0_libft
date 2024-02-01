@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 11:32:06 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/12 20:26:11 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 16:30:41 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//bzero - zero a byte string
 #include "libft.h"
 
+//zero a byte string
 void	ft_bzero(void *s, size_t n)
 {
 	size_t			i;
@@ -35,6 +35,6 @@ int	main ()
 	ft_bzero(s+1, n);
 	bzero(y+1, n);
 
-	printf("%s\n", s);	
+	printf("%s\n", s);
 	printf("%s\n", y);
 }*/
