@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 09:52:40 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/22 10:21:51 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 16:34:10 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//duplicate a string
 #include "libft.h"
 
+//duplicate a string
 char	*ft_strdup(const char *s)
 {
 	char	*s2;
