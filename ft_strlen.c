@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 17:04:18 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/12 19:45:47 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 16:41:30 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//calculate the length of a stringi
 #include "libft.h"
 
+//calculate the length of a string
 size_t	ft_strlen(const char *s)
 {
 	int	len;
