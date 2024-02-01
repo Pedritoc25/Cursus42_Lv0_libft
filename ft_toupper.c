@@ -6,11 +6,11 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 11:46:13 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/12 20:29:58 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 17:52:29 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//toupper - convert a char to uppercase
+//convert a char to uppercase
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
