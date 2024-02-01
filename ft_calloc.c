@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 16:07:29 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/22 10:17:11 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 16:30:52 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//allocate and free dynamic memory
 #include "libft.h"
 
+//allocate and free dynamic memory
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	size_t	total_bytes;
