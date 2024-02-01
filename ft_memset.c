@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 09:38:39 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/16 17:34:46 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 18:03:19 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//memset - fill memory with a constant byte
 #include "libft.h"
 
+//fill memory with a constant byte
 void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			i;
