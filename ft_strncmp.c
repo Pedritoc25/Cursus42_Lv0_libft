@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 10:21:34 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/15 11:05:18 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 17:46:50 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//compare two strings
 #include "libft.h"
 
+//compare two strings up to n bytes
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;

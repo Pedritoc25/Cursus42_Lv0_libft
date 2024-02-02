@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 13:23:14 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/25 10:39:37 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 17:51:34 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//Returns a substring
 #include "libft.h"
 
+//returns a substring
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;

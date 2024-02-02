@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 11:45:34 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/16 16:04:19 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 16:39:15 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//size-bounded string copying and concatenation
 #include "libft.h"
 
+//size-bounded string copying and concatenation up to size - 1
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;

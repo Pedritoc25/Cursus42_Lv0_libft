@@ -6,14 +6,14 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 11:54:22 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/23 16:15:53 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 18:02:53 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//convert a string to an integer
 #include "libft.h"
 
-int	check_spaces(int i, const char *nptr)
+//convert a string to an integer
+static int	check_spaces(int i, const char *nptr)
 {
 	if (nptr[0] == ' ' || nptr[0] == '\f' || nptr[0] == '\n'
 		|| nptr[0] == '\r' || nptr[0] == '\t' || nptr[0] == '\v')
@@ -24,7 +24,7 @@ int	check_spaces(int i, const char *nptr)
 	return (i);
 }
 
-int	get_number(int i, const char *nptr, int *digit, int *number)
+static int	get_number(int i, const char *nptr, int *digit, int *number)
 {
 	while (ft_isdigit(nptr[i]))
 	{

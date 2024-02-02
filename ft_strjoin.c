@@ -6,14 +6,14 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 12:24:15 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/25 10:39:11 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 18:02:06 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//combine elements
 #include "libft.h"
 
-char	*ft_mystrcat(const char *dst, const char *src)
+//combine elements
+static char	*ft_mystrcat(const char *dst, const char *src)
 {
 	size_t	i;
 	char	*s;

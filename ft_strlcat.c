@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 10:43:05 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/17 11:50:41 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 16:40:09 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//size-bounded string copying and concatenation
 #include "libft.h"
 
+//size-bounded string copying and concatenation appends up to NUL-terminated
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	i;

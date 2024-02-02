@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 10:32:23 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/16 11:19:39 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/01 15:47:34 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//memcmp - compare memory areas
 #include "libft.h"
 
+//compare memory areas
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t				i;

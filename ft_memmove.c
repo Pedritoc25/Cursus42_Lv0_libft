@@ -6,11 +6,11 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 10:48:07 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/12 20:28:42 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 16:35:30 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//memmove - copy memory area
+//copy memory area and prevents overlapping
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
@@ -42,7 +42,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 }
 /*#include <string.h>
 int	main()
-{	
+{
 	const char src[] = "defg";
 	char dest[] = "abc";
 	const char src2[] = "defg";

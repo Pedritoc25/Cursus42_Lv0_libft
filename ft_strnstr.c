@@ -6,17 +6,17 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/16 15:41:43 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/17 10:12:33 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/01 14:44:32 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//locate a substring in a string
 #include "libft.h"
 
+//locate a substring in a string
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;

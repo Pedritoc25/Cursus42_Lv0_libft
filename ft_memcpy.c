@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 15:24:28 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/12 20:28:14 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/01 15:47:38 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//memcpy - copy memory area
 #include "libft.h"
 
+//copy memory area
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t			i;
@@ -37,7 +37,7 @@ int	main ()
 	const char src2[] = "1234";
 	char dest2[] = "567";
 	size_t n = 3;
-	
+
 	ft_memcpy(dest, src, n);
 	memcpy(dest2, src2, n);
 

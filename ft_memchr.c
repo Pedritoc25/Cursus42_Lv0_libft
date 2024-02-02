@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 11:07:49 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/16 10:28:35 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/01/31 16:33:31 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//scan memory for a character
 #include "libft.h"
 
+//scan memory for a character
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t				i;
