@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 11:07:49 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/31 16:33:31 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/12 10:12:16 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	cc = (unsigned const char *)s;
 	while (i < n)
 	{
-		if (cc[i] == c)
+		if (cc[i] == (unsigned char)c)
 			return ((void *)(cc + i));
 		i++;
 	}
