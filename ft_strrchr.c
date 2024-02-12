@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 17:50:13 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/12 10:02:23 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/12 11:13:50 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ char	*ft_strrchr(const char *s, int c)
 	len = ft_strlen(s);
 	if (c == '\0')
 		return ((char *)&s[len]);
-	if (len > 0)
-		len--;
-	else
+	if (len == 0)
 		return (NULL);
 	while (len > 0)
 	{
