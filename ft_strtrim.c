@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 18:01:01 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/01 10:20:29 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/12 10:27:22 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = 0;
 	if (!s1 || !set)
-		return (0);
+		return (NULL);
+	len = ft_strlen(s1);
 	if (s1[0] != '\0')
 	{
-		len = ft_strlen(s1);
 		while (ft_strchr(set, s1[i]) != 0)
 			i++;
 		while (ft_strrchr(set, s1[len]) != 0)
