@@ -6,13 +6,12 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 12:24:15 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/31 18:02:06 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/14 10:19:04 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//combine elements
 static char	*ft_mystrcat(const char *dst, const char *src)
 {
 	size_t	i;
@@ -37,6 +36,7 @@ static char	*ft_mystrcat(const char *dst, const char *src)
 	return (s);
 }
 
+//combine elements
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*s;

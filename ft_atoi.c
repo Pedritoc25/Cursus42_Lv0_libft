@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 11:54:22 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/12 10:53:45 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/14 10:19:54 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static long	get_number(long i, const char *nptr, long *digit, long *number)
 	return (i);
 }
 
-long	check_value(const char nptr, long value, long *i)
+static long	check_value(const char nptr, long value, long *i)
 {
 	if (nptr == '-')
 	{
@@ -57,8 +57,7 @@ int	ft_atoi(const char *nptr)
 	number = 0;
 	i = check_spaces(i, nptr);
 	value = check_value(nptr[i], value, &i);
-	while (ft_isdigit(nptr[i]))
-		i = get_number(i, nptr, &digit, &number);
+	i = get_number(i, nptr, &digit, &number);
 	return ((int)(number * value));
 }
 /*#include <stdlib.h>
