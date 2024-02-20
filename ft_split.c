@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 14:16:37 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/20 12:14:13 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/20 13:18:45 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,22 @@ static long	word_count(char const *s, char c, size_t len, size_t i)
 	}
 	return (len);
 }
+
+static char	**free_word_malloc(char	**result, size_t j)
+{
+	while (j >= 0)
+	{
+		free(result[j]);
+		j--;
+	}
+	free(result);
+	return (NULL);
+}
+
+/*static char	**fill_result()
+{
+
+}*/
 
 //split a string into a series of tokens based on a particular delimiter.
 char	**ft_split(char const *s, char c)
@@ -57,23 +73,12 @@ char	**ft_split(char const *s, char c)
 			}
 			result[j] = ft_substr(s, i - word_len, word_len);
 			if (!result[j])
-			{
-				while (j >= 0)
-				{
-					free(result[j]);
-					j--;
-				}
-				free(result);
-				return (NULL);
-			}
+				return (free_word_malloc(result, j));
 			word_len = 0;
 			j++;
 		}
 		i++;
 	}
-	i = 0;
-	while (result[i] != '\0')
-		i++;
 	return (result);
 }
 
