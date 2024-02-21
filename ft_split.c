@@ -6,20 +6,25 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 14:16:37 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/20 13:18:45 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/21 16:04:40 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static long	word_count(char const *s, char c, size_t len, size_t i)
+static size_t	word_count(char const *s, char c)
 {
+	size_t	len;
+	size_t	i;
+
+	len = 0;
+	i = 0;
 	while (s[i] != '\0')
 	{
 		if (s[i] != c)
 		{
 			len++;
-			while (s[i] != c && s[i] != '\0')
+			while (s[i] != c && s[i + 1] != '\0')
 				i++;
 		}
 		i++;
@@ -38,30 +43,15 @@ static char	**free_word_malloc(char	**result, size_t j)
 	return (NULL);
 }
 
-/*static char	**fill_result()
+static char	**split_splited(char const *s, char c, size_t len, char **result)
 {
-
-}*/
-
-//split a string into a series of tokens based on a particular delimiter.
-char	**ft_split(char const *s, char c)
-{
-	size_t	len;
 	size_t	word_len;
 	size_t	i;
 	size_t	j;
-	char	**result;
 
-	len = 0;
 	word_len = 0;
 	i = 0;
 	j = 0;
-	if (!s)
-		return (NULL);
-	len = word_count(s, c, len, i);
-	result = (char **)ft_calloc(len + 1, sizeof(char *));
-	if (!result)
-		return (NULL);
 	while (j < len && s[i] != '\0')
 	{
 		if (s[i] != c)
@@ -82,12 +72,33 @@ char	**ft_split(char const *s, char c)
 	return (result);
 }
 
+//split a string into a series of tokens based on a particular delimiter.
+char	**ft_split(char const *s, char c)
+{
+	size_t	len;
+	size_t	word_len;
+	char	**result;
+
+	word_len = 0;
+	if (!s)
+		return (NULL);
+	len = word_count(s, c);
+	result = (char **)ft_calloc(len + 1, sizeof(char *));
+	if (!result)
+		return (NULL);
+	return (split_splited(s, c, len, result));
+}
+
 /*int	main(void)
 {
 	char const	*s = "hello!";
 	char		c = ' ';
 	char **res = ft_split(s, c);
-	//int i = 0;
-	printf("Resultado: %s\n", res[1]);
+	int i = 0;
+	while (res[i])
+	{
+		printf("Resultado: %s\n", res[i]);
+		i++;
+	}
 	return (0);
 }*/
