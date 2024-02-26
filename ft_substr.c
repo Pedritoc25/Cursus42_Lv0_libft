@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 13:23:14 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/13 12:17:16 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/26 15:46:22 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	len_e = ft_strlen(s);
 	if (len > ft_strlen(s + start))
 		len = ft_strlen(s + start);
-	sub_str = (char *)malloc((len + 1) * sizeof(char));
+	sub_str = (char *)ft_calloc(len + 1, sizeof(char));
 	if (sub_str == NULL || !s)
 		return (NULL);
 	temp = sub_str;
@@ -38,7 +38,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		temp[i] = s[start + i];
 		i++;
 	}
-	temp[i] = '\0';
 	return (temp);
 }
 /*int	main(void)
