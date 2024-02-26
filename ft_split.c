@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 14:16:37 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/21 16:04:40 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/26 16:56:23 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static char	**free_word_malloc(char	**result, size_t j)
 	return (NULL);
 }
 
-static char	**split_splited(char const *s, char c, size_t len, char **result)
+static char	**separator(char const *s, char c, size_t len, char **result)
 {
 	size_t	word_len;
 	size_t	i;
@@ -86,7 +86,7 @@ char	**ft_split(char const *s, char c)
 	result = (char **)ft_calloc(len + 1, sizeof(char *));
 	if (!result)
 		return (NULL);
-	return (split_splited(s, c, len, result));
+	return (separator(s, c, len, result));
 }
 
 /*int	main(void)

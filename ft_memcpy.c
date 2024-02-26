@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 15:24:28 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/01 15:47:38 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/26 16:41:23 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 	i = 0;
 	uc_dest = (unsigned char *)dest;
-	uc_src = (unsigned char *)src;
+	if (src)
+		uc_src = (unsigned char *)src;
+	else
+		return (NULL);
 	while (i < n)
 	{
 		uc_dest[i] = uc_src[i];
