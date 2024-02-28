@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 13:23:14 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/26 15:46:22 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/28 14:34:51 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,23 +16,23 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
-	size_t	len_e;
-	char	*sub_str;
 	char	*temp;
 
 	i = 0;
-	len_e = ft_strlen(s);
-	if (len > ft_strlen(s + start))
-		len = ft_strlen(s + start);
-	sub_str = (char *)ft_calloc(len + 1, sizeof(char));
-	if (sub_str == NULL || !s)
+	if (!s)
 		return (NULL);
-	temp = sub_str;
-	if (len == 0 || start >= len_e)
+	if (!*s || start >= ft_strlen(s))
 	{
-		temp[i] = '\0';
+		temp = (char *)ft_calloc(1, sizeof(char));
+		if (temp == NULL)
+			return (NULL);
 		return (temp);
 	}
+	if (len > ft_strlen(s + start))
+		len = ft_strlen(s + start);
+	temp = (char *)ft_calloc(len + 1, sizeof(char));
+	if (temp == NULL)
+		return (NULL);
 	while (i < len && s[start + i] != '\0')
 	{
 		temp[i] = s[start + i];
@@ -42,7 +42,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 }
 /*int	main(void)
 {
-	char const	s[] = "abc";
+	char const	s[] = "";
 	unsigned int	start = 1;
 	size_t		len = 1;
 	char		*result;

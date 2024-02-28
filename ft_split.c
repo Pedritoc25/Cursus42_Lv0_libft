@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/13 14:16:37 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/26 16:56:23 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/28 14:46:13 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,13 @@ static size_t	word_count(char const *s, char c)
 
 static char	**free_word_malloc(char	**result, size_t j)
 {
-	while (j >= 0)
+	size_t	i;
+
+	i = 0;
+	while (i < j)
 	{
-		free(result[j]);
-		j--;
+		free(result[i]);
+		i++;
 	}
 	free(result);
 	return (NULL);

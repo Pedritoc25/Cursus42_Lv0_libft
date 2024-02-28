@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 16:07:29 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/01/31 16:30:52 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/28 14:57:50 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,12 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t	total_bytes;
 	void	*result;
 
+	if (size != 0 && nmemb > (SIZE_MAX / size))
+		return (NULL);
 	total_bytes = nmemb * size;
 	result = malloc(total_bytes);
-	if (result == NULL)
-		return (NULL);
-	ft_bzero(result, total_bytes);
+	if (result != NULL)
+		ft_bzero(result, total_bytes);
 	return (result);
 }
 /*int		main()
