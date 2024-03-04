@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 09:55:37 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/03/04 12:22:08 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/04 13:20:43 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 //Add a node at the first position
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
+	if (!lst && !new)
+		return ;
 	new->next = *lst;
 	*lst = new;
 }
