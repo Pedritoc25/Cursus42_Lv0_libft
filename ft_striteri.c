@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 12:14:48 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/26 16:01:42 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/02/28 15:24:45 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 /*char	f(unsigned int i, char c)
 {
-	return (i + c);
+	char s;
+	s = ft_toupper(c);
+	return (s);
 }*/
 
 /*lets you aplly the same function (f) to the each element of an array
