@@ -6,12 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 09:55:37 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/03/04 10:22:30 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/04 12:22:08 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//Add a node at the first position
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	new->next = *lst;
