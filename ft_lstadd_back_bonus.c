@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 13:43:40 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/03/04 16:55:48 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/05 10:36:03 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
 
-	if (!lst && !new)
+	if (!lst || !new)
 		return ;
 	if (!*lst)
 	{
@@ -41,7 +41,7 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	node->next = node2;
 	node2->content = "2";
 	node2->next = NULL;
-	node3->content = "3";
+	node3->content = "";
 	node3->next = NULL;
 	if (!node && !node2)
 	{
