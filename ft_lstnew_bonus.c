@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/29 15:15:47 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/03/04 10:23:27 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/05 09:49:33 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ t_list	*ft_lstnew(void *content)
 	if (!node)
 		return (NULL);
 	node->content = content;
+	node->next = NULL;
 	return (node);
 }
 
