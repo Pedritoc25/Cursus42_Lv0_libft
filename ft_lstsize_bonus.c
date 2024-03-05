@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 10:38:14 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/03/04 13:19:30 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/05 09:33:31 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_lstsize(t_list *lst)
 	int	count;
 
 	if (!lst)
-		return (NULL);
+		return (0);
 	count = 0;
 	while (lst)
 	{
