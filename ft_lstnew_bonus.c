@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/29 15:15:47 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/03/05 09:49:33 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/05 13:14:16 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//node that returns the first content
+//creates a new node
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*node;

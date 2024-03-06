@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 16:57:45 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/03/05 10:29:20 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/06 11:26:07 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,3 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 	ft_lstdelone(node3, &free);
 	return (0);
 }*/
-
