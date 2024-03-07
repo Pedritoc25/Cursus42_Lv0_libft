@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 10:41:06 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/03/06 11:50:22 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/06 12:18:48 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//
+//Copies a list, applying 'f' function to each node
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_list;
