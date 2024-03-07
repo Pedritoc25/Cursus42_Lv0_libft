@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 10:37:12 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/03/05 11:56:16 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/07 15:36:20 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,12 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	*lst = NULL;
 }
 
-/*int	main(void)
+/*static void	free_string(void *content)
+{
+	content = NULL;
+}
+
+int	main(void)
 {
 	t_list	*node;
 	t_list	*node2;
@@ -46,6 +51,12 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 		free(node3);
 		return (0);
 	}
-	ft_lstclear(&node, &free);
+	node->content = "1";
+	node->next = node2;
+	node2->content = "2";
+	node2->next = node3;
+	node3->content = "3";
+	node3->next = NULL;
+	ft_lstclear(&node, &free_string);
 	return (0);
 }*/

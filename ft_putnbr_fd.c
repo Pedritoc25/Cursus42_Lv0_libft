@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 13:31:29 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/26 15:53:17 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/07 17:12:49 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,12 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(n + '0', fd);
 }
 
-/*int	main(void)
+/*#include <fcntl.h>
+int	main(void)
 {
-	ft_putnbr_fd(42, 1);
+	int fd = open("output.txt", O_WRONLY | O_CREAT, 0666);
+	int	n[] = 150;
+	ft_putnbr_fd(n, fd);
+	close(fd);
 	return (0);
 }*/

@@ -6,13 +6,13 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 12:14:48 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/03/07 12:59:13 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/07 17:35:03 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*char	f(unsigned int i, char c)
+/*static char	f(unsigned int i, char c)
 {
 	char s;
 	s = ft_toupper(c);

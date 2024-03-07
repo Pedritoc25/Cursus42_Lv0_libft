@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/26 13:23:22 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/03/07 12:54:32 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/07 17:10:09 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,12 @@ void	ft_putendl_fd(char *s, int fd)
 	write (fd, "\n", 1);
 }
 
-/*int	main(void)
+/*#include <fcntl.h>
+int	main(void)
 {
-
+	int fd = open("output.txt", O_WRONLY | O_CREAT, 0666);
+	char	s[] = "Hola";
+	ft_putendl_fd(s, fd);
+	close(fd);
+	return (0);
 }*/
