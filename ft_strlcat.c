@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 10:43:05 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/08 16:03:37 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/07 12:43:21 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	src_len;
 
 	i = 0;
-	dst_len = ft_strlen(dst);
+	if (size == 0 && (!dst || !src))
+		return (0);
 	src_len = ft_strlen(src);
 	if (size == 0)
 		return (src_len);
+	dst_len = ft_strlen(dst);
 	if (size <= dst_len)
 		return (size + src_len);
 	while (src[i] != '\0' && i + dst_len < size - 1)

@@ -6,7 +6,7 @@
 /*   By: pcabanas <pcabanas@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 12:14:48 by pcabanas          #+#    #+#             */
-/*   Updated: 2024/02/28 15:24:45 by pcabanas         ###   ########.fr       */
+/*   Updated: 2024/03/07 12:59:13 by pcabanas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	unsigned int	i;
 
 	i = 0;
+	if (!s || !f)
+		return ;
 	while (s[i])
 	{
 		(*f)(i, &s[i]);
